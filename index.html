@@ -206,8 +206,8 @@ nav{background:var(--white);border-bottom:1px solid var(--rule);position:sticky;
 .feat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1.5rem;margin-top:3rem}
 .feat-card{border:1px solid var(--rule);background:var(--white);overflow:hidden;transition:all .25s;position:relative}
 .feat-card:hover{box-shadow:0 8px 30px rgba(0,0,0,.08);transform:translateY(-3px)}
-.feat-cover{height:240px;display:flex;align-items:center;justify-content:center;padding:1.8rem;text-align:center;position:relative}
-.feat-cover h4{font-family:var(--serif);font-size:.92rem;color:#fff;font-weight:600;position:relative;z-index:1;line-height:1.35;text-shadow:0 1px 3px rgba(0,0,0,.3)}
+.feat-cover{height:280px;display:flex;align-items:center;justify-content:center;padding:1.8rem;text-align:center;position:relative;background-size:cover;background-position:center;background-repeat:no-repeat}
+.feat-cover h4{font-family:var(--serif);font-size:.92rem;color:#fff;font-weight:600;position:relative;z-index:1;line-height:1.35;text-shadow:0 2px 8px rgba(0,0,0,.7);background:rgba(0,0,0,.35);padding:.5rem .8rem;border-radius:2px}
 .feat-info{padding:1rem 1.2rem 1.2rem}
 .feat-cat{font-family:var(--mono);font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent)}
 .feat-desc{font-size:.75rem;color:var(--ink-light);margin-top:.3rem;font-weight:300}
@@ -654,44 +654,68 @@ footer{background:var(--bg-dark);color:rgba(255,255,255,.35);padding:4rem 0 2rem
     <p style="color:var(--ink-light);max-width:640px;font-weight:300;margin-top:.5rem">A selection from Dr. Baig's internationally published catalog — available on Amazon, Apple Books, Barnes & Noble, Kobo, Everand, Lulu, and 20+ platforms worldwide.</p>
     <div class="feat-grid">
       <a href="https://www.amazon.com/dp/B0FFX2YNSP" target="_blank" class="feat-card reveal stagger-1">
-        <div class="feat-cover" style="background:linear-gradient(135deg,#0f2027,#203a43)"><h4>Operation Rising Lion 2025</h4></div>
+        <div class="feat-cover" style="background-image:url('covers/operation-rising-lion.jpg')"><h4>Operation Rising Lion 2025</h4></div>
         <div class="feat-info"><div class="feat-cat">Middle East & Conflict</div><div class="feat-desc">Israel's Strike on Iran's Nuclear Program — 2nd Edition</div></div>
       </a>
       <a href="https://www.amazon.com/dp/B0FMMHFP8J" target="_blank" class="feat-card reveal stagger-2">
-        <div class="feat-cover" style="background:linear-gradient(135deg,#1a1a2e,#0d1321)"><h4>Nuclear Weapons in Space</h4></div>
+        <div class="feat-cover" style="background-image:url('covers/nuclear-weapons-space.jpg')"><h4>Nuclear Weapons in Space</h4></div>
         <div class="feat-info"><div class="feat-cat">Nuclear & Defence</div><div class="feat-desc">Strategic Competition Beyond Earth</div></div>
       </a>
       <a href="https://www.amazon.com/dp/B0DZR3PDDR" target="_blank" class="feat-card reveal stagger-3">
-        <div class="feat-cover" style="background:linear-gradient(135deg,#2d132c,#3e1f47)"><h4>Bashar al-Assad's Last Stand</h4></div>
+        <div class="feat-cover" style="background-image:url('covers/bashar-assad.jpg')"><h4>Bashar al-Assad's Last Stand</h4></div>
         <div class="feat-info"><div class="feat-cat">Middle East</div><div class="feat-desc">The Syrian Conflict's Final 11 Days — Dec 2024</div></div>
       </a>
       <a href="https://www.amazon.com/dp/B0FFG7VGNG" target="_blank" class="feat-card reveal stagger-4">
-        <div class="feat-cover" style="background:linear-gradient(135deg,#1b1b2f,#162447)"><h4>Behind The Veil Of Deception</h4></div>
+        <div class="feat-cover" style="background-image:url('covers/behind-veil.jpg')"><h4>Behind The Veil Of Deception</h4></div>
         <div class="feat-info"><div class="feat-cat">Intelligence & Espionage</div><div class="feat-desc">Catherine Perez-Shakdam</div></div>
       </a>
-      <a href="https://www.amazon.com/s?k=naim+tahir+baig&crid=2W4CA8DQT28AV&sprefix=naim+tahir+bai%2Caps%2C438&ref=nb_sb_noss" target="_blank" class="feat-card reveal stagger-5">
-        <div class="feat-cover" style="background:linear-gradient(135deg,#1a1a2e,#16213e)"><h4>Fractional Orbital Bombardment</h4></div>
-        <div class="feat-info"><div class="feat-cat">Nuclear & Space Strategy</div><div class="feat-desc">China's Space-Based Nuclear Deterrent</div></div>
+      <a href="https://www.amazon.com/s?k=naim+tahir+baig" target="_blank" class="feat-card reveal stagger-5">
+        <div class="feat-cover" style="background-image:url('covers/nuclear-orbits.jpg')"><h4>Nuclear Orbits</h4></div>
+        <div class="feat-info"><div class="feat-cat">Nuclear & Space Strategy</div><div class="feat-desc">From Soviet Satellites to Russian Space Power</div></div>
       </a>
       <a href="https://www.amazon.com/s?k=naim+tahir+baig" target="_blank" class="feat-card reveal stagger-6">
-        <div class="feat-cover" style="background:linear-gradient(135deg,#0d1b2a,#1b2838)"><h4>The Ice Grab</h4></div>
+        <div class="feat-cover" style="background-image:url('covers/ice-grab.jpg')"><h4>The Ice Grab</h4></div>
         <div class="feat-info"><div class="feat-cat">Geopolitics</div><div class="feat-desc">The 2025–2026 Greenland Crisis</div></div>
       </a>
       <a href="https://www.amazon.com/s?k=naim+tahir+baig" target="_blank" class="feat-card reveal stagger-7">
-        <div class="feat-cover" style="background:linear-gradient(135deg,#222,#3a3a3a)"><h4>IR from a Pakistani Perspective</h4></div>
+        <div class="feat-cover" style="background-image:url('covers/ir-pakistani.jpg')"><h4>IR from a Pakistani Perspective</h4></div>
         <div class="feat-info"><div class="feat-cat">Academic Textbook</div><div class="feat-desc">A Comprehensive Masters-Level Textbook</div></div>
       </a>
       <a href="https://www.amazon.com/s?k=naim+tahir+baig" target="_blank" class="feat-card reveal stagger-8">
-        <div class="feat-cover" style="background:linear-gradient(135deg,#0a0e17,#1e293b)"><h4>US-China Strategic Rivalry for Regional Hegemony</h4></div>
+        <div class="feat-cover" style="background-image:url('covers/us-china-rivalry.jpg')"><h4>US-China Strategic Rivalry</h4></div>
         <div class="feat-info"><div class="feat-cat">Geopolitics</div><div class="feat-desc">Great Power Competition</div></div>
       </a>
       <a href="https://www.amazon.com/dp/B0F23D2L2K" target="_blank" class="feat-card reveal stagger-1">
-        <div class="feat-cover" style="background:linear-gradient(135deg,#2a0a0a,#4a1a1a)"><h4>Complexity of Souls</h4></div>
+        <div class="feat-cover" style="background-image:url('covers/complexity-souls.jpg')"><h4>Complexity of Souls</h4></div>
         <div class="feat-info"><div class="feat-cat">Fiction & Literature</div><div class="feat-desc">Whispers from the Inner Universe</div></div>
       </a>
       <a href="https://www.amazon.com/s?k=naim+tahir+baig" target="_blank" class="feat-card reveal stagger-2">
-        <div class="feat-cover" style="background:linear-gradient(135deg,#0f3460,#162447)"><h4>Kiss Cam Crisis</h4></div>
+        <div class="feat-cover" style="background-image:url('covers/kiss-cam-crisis.jpg')"><h4>Kiss Cam Crisis</h4></div>
         <div class="feat-info"><div class="feat-cat">Tech & Society</div><div class="feat-desc">Surveillance Capitalism in Action</div></div>
+      </a>
+      <a href="https://www.amazon.com/s?k=naim+tahir+baig" target="_blank" class="feat-card reveal stagger-3">
+        <div class="feat-cover" style="background-image:url('covers/trump-putin.jpg')"><h4>Trump vs. Putin</h4></div>
+        <div class="feat-info"><div class="feat-cat">Geopolitics</div><div class="feat-desc">The Secrets of Alaska Summit 2025</div></div>
+      </a>
+      <a href="https://www.amazon.com/s?k=naim+tahir+baig" target="_blank" class="feat-card reveal stagger-4">
+        <div class="feat-cover" style="background-image:url('covers/great-realignment.jpg')"><h4>The Great Realignment</h4></div>
+        <div class="feat-info"><div class="feat-cat">Geopolitics & Strategy</div><div class="feat-desc">Reshaping Global Power Structures</div></div>
+      </a>
+      <a href="https://www.amazon.com/s?k=naim+tahir+baig" target="_blank" class="feat-card reveal stagger-5">
+        <div class="feat-cover" style="background-image:url('covers/caracas-gambit.jpg')"><h4>The Caracas Gambit 2026</h4></div>
+        <div class="feat-info"><div class="feat-cat">International Law</div><div class="feat-desc">Sovereignty & the Use of Force</div></div>
+      </a>
+      <a href="https://www.amazon.com/s?k=naim+tahir+baig" target="_blank" class="feat-card reveal stagger-6">
+        <div class="feat-cover" style="background-image:url('covers/gaza-ethics.jpg')"><h4>GAZA: The Word 'Ethics' Is At Stake</h4></div>
+        <div class="feat-info"><div class="feat-cat">Middle East</div><div class="feat-desc">Ethics and the Gaza Crisis</div></div>
+      </a>
+      <a href="https://www.amazon.com/s?k=naim+tahir+baig" target="_blank" class="feat-card reveal stagger-7">
+        <div class="feat-cover" style="background-image:url('covers/foreign-policy-textbook.jpg')"><h4>A Textbook of Foreign Policy Analysis</h4></div>
+        <div class="feat-info"><div class="feat-cat">Academic Textbook</div><div class="feat-desc">Comprehensive Policy Framework</div></div>
+      </a>
+      <a href="https://www.amazon.com/s?k=naim+tahir+baig" target="_blank" class="feat-card reveal stagger-8">
+        <div class="feat-cover" style="background-image:url('covers/learn-ai-fast.jpg')"><h4>Learn AI Fast</h4></div>
+        <div class="feat-info"><div class="feat-cat">Technology & AI</div><div class="feat-desc">A Practical Guide for Busy Professionals</div></div>
       </a>
     </div>
     <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2.5rem">
